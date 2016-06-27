@@ -1,27 +1,28 @@
-## Laravel PHP Framework
+# upLexis
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+API system to search CNPJ in Sintegra/ES database.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Technologies used for the development of API:
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+* PHP 5.6.14
+* Laravel Framework 5.1
+* MySQL Database
+* Bootstrap 3
 
-## Official Documentation
+Setup of the application:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+* [Install Laravel Framework 5.1 in your project folder](https://laravel.com/docs/5.1);
+* Run database.sql to get the database working;
 
-## Contributing
+You can access any action of this system through some of the URLs below:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+* Search CNPJ (cnpj param required)
+    domain.example.com/api/find-cnpj
 
-## Security Vulnerabilities
+* Delete owned search history (id param required)
+    domain.example.com/api/destroy
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+* List owned searchs
+    domain.example.com/api
 
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+All function require username(email) and password;

@@ -35,4 +35,4 @@ Route::post('auth/register', 'Auth\AuthController@postRegister');
 // API Rest routes
 Route::post('api/find-cnpj', ['uses' => 'SintegraRestController@create','middleware'=>'simpleauth']);
 Route::post('api/destroy', ['uses' => 'SintegraRestController@destroy','middleware'=>'simpleauth']);
-Route::get('api', ['uses' => 'SintegraRestController@index','middleware'=>'simpleauth']);
+Route::post('api', ['uses' => 'SintegraRestController@index','middleware'=>'simpleauth']);

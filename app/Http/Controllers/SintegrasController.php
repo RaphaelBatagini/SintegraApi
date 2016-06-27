@@ -28,8 +28,15 @@ class SintegrasController extends Controller
      */
     public function index()
     {
-        $request = Request::create('/api', 'GET');
+        $originalInput = Request::input();
+
+        $request = Request::create('/api', 'POST');
+
+        Request::replace($request->input());
+
         $sintegras = json_decode(\Route::dispatch($request)->getContent());
+
+        Request::replace($originalInput);
 
         return view('sintegras.index', ['sintegras' => $sintegras->data]);
     }
