@@ -11,7 +11,6 @@ Technologies used for the development of API:
 
 Setup of the application:
 
-* [Install Laravel Framework 5.1 in your project folder](https://laravel.com/docs/5.1);
 * Run database.sql to get the database working;
 
 You can access any action of this system through some of the URLs below:
