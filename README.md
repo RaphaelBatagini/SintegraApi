@@ -1,4 +1,4 @@
-# upLexis
+# Sintegra API
 
 API system to search CNPJ in Sintegra/ES database.
 
